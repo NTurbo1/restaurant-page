@@ -6,7 +6,7 @@ function loadHomeContent() {
 
     let header = document.createElement('h1');
     header.classList.add('home-content-header');
-    header.textContent = 'Restaurant Home Page';
+    header.textContent = 'Welcome to Our Restaurant!';
 
     let menuContentHeader = document.querySelector('.menu-content-header');
     let contactsContentHeader = document.querySelector('.contacts-content-header');

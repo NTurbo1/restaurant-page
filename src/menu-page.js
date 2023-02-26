@@ -3,7 +3,7 @@ function loadMenuContent() {
     
     let header = document.createElement('h1');
     header.classList.add('menu-content-header');
-    header.textContent = 'Restaurant Menu Page';
+    header.textContent = 'Menu';
     
     let contactsContentHeader = document.querySelector('.contacts-content-header');
     let homeContentHeader = document.querySelector('.home-content-header');

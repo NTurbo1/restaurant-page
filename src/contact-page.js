@@ -3,7 +3,7 @@ function loadContactsContent() {
     
     let header = document.createElement('h1');
     header.classList.add('contacts-content-header');
-    header.textContent = 'Restaurant Contacts Page';
+    header.textContent = 'Contacts';
     
     let menuContentHeader = document.querySelector('.menu-content-header');
     let homeContentHeader = document.querySelector('.home-content-header');

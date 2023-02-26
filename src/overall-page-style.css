@@ -1,0 +1,36 @@
+:root {
+    --content-background-color: yellow;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 70px;
+    background-color: green;
+}
+
+.content-changing-btn {
+    background-color: red;
+    height: 100%;
+    width: 100px;
+    border-style: none;
+}
+
+#content {
+    flex-grow: 1;
+    height: 100vh;
+    background-color: var(--content-background-color);
+}

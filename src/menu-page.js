@@ -17,6 +17,16 @@ function loadMenuContent() {
     if (!contentDiv.contains(menuContentHeader)) {
         contentDiv.appendChild(header);
     }
+
+    let menuBtnBackgroundColor = window.getComputedStyle(this).backgroundColor;
+    let contentDivBackgroundColor = window.getComputedStyle(contentDiv).backgroundColor;
+    this.style.backgroundColor = contentDivBackgroundColor;
+
+    let homeBtn = document.querySelector('.home-content-btn');
+    let contactsBtn = document.querySelector('.contacts-content-btn');
+
+    homeBtn.style.backgroundColor = menuBtnBackgroundColor;
+    contactsBtn.style.backgroundColor = menuBtnBackgroundColor;
 }
 
 export {

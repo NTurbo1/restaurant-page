@@ -17,6 +17,16 @@ function loadContactsContent() {
     if (!contentDiv.contains(contactsContentHeader)) {
         contentDiv.appendChild(header);
     }
+
+    let contactsBtnBackgroundColor = window.getComputedStyle(this).backgroundColor;
+    let contentDivBackgroundColor = window.getComputedStyle(contentDiv).backgroundColor;
+    this.style.backgroundColor = contentDivBackgroundColor;
+
+    let homeBtn = document.querySelector('.home-content-btn');
+    let menuBtn = document.querySelector('.menu-content-btn');
+
+    homeBtn.style.backgroundColor = contactsBtnBackgroundColor;
+    menuBtn.style.backgroundColor = contactsBtnBackgroundColor;
 }
 
 export {
